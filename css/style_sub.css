@@ -1,0 +1,159 @@
+/* SUB 공통 CSS */
+
+#sub_header{width:100%; height:800px; background-size:cover; position:relative;}
+#sub_header_inner{width:100%; margin:0 auto; position:absolute; top:41%; text-align:center;}
+#sub_header_inner h2{font-size:70px; font-family:'Roboto Slab', serif; color:#fff; font-weight:normal;}
+#sub_header_inner p{font-size:15px; font-family:'Roboto Slab', serif; color:#fff; line-height:1.5; margin-top:36px;}
+.pagedown{float:left; width:6%; height:100%; text-align:center;}
+/* ------------------------------------------- about ------------------------------------------- */
+.about_header{ background:url(../img/sub_about_bg.jpg) no-repeat; background-size:cover;}
+#aboutme .pagedown{line-height:202px;}
+#skillchart{width:100%; height:1035px; background:url(../img/sub_about_chart_bg.jpg) no-repeat; background-size:cover; position:relative; padding-top:5px;}
+#skillchart_inner{width:90%; margin:0 auto;}
+.chart_txt_wrap{overflow:hidden;}
+.chart_txt_left{float:left; width:33%;}
+.chart_txt_left h2{margin-top:; font-size:40px; font-weight:normal; margin-top:50px; color:#2d2d2d;}
+.chart_txt_right{float:right; width:67%; font-size:15px; line-height:1.5; margin-top:65px;}
+/* ------------------------------------------- work ------------------------------------------- */
+.work_header{ background:url(../img/sub_work_bg.jpg) no-repeat;}
+#sub_work_txt{width:100%; height:380px; background:url(../img/sub_work_txt_bg.jpg) no-repeat; background-size:cover; position:relative;} 
+#sub_work_txt_inner{width:90%; float:right; position:relative; }
+.sub_work_txt_left{float:left; width:30%;}
+.sub_work_txt_left h2{font-size:40px; color:#2d2d2d; line-height:1.2; margin-top:40px; font-weight:normal;}
+.sub_work_txt_right{float:right; width:70%; font-size:15px; line-height:1.5; margin-top:58px;}
+#sub_work_txt .pagedown{top:44px;}
+#portfolio_txt{width:100%; height:401px; background:url(../img/sub_portfolio_bg.jpg) no-repeat; background-size:cover; text-align:center; padding-top:85px;}
+#portfolio_txt p{font-size:18px; line-height:1.5; margin-bottom:22px; }
+.sub_work_txt_right dl dt{margin-top:20px; color:#000;}
+.sub_work_txt_right dl dd{margin-top:5px;}
+.sub_work_txt_right strong ~ strong{margin-top:20px; display: block;}
+/* ------------------------------------------- contact us ------------------------------------------- */
+.contact_header{ background:url(../img/sub_contact_bg.jpg) no-repeat;}
+#contact{width:100%; height:880px; background:url(../img/sub_contact_bg2.jpg) no-repeat; background-size:cover;} 
+#contact_inner{width:90%; float:right; position:relative; overflow:hidden; position:relative;}
+.contact_inner_1{height:591px; position:relative;}
+.contact_inner_1 h2{font-size:40px; color:#2d2d2d; font-weight:normal; line-height:1.2; margin-top:40px;}
+.contact_left{width:50%; float:left;}
+.contact_us p{font-size:15px; line-height:1.5; margin-top:36px;}
+.contact_us_img{text-align:center; margin-top:-5px;}
+.contact_right{width:50%; float:right;}
+.contact_inner_2 h3{font-size:34px; color:#2d2d2d; margin-bottom:29px;}
+.contact_inner_2 p{font-size:14px; color:#555555; line-height:1.5; width:50%; float:left;}
+.contact_address_info{line-height:1.8 !important;}
+.contact_address_info span{color:#111;}
+.contact{position:relative;}
+.address{width:100%;}
+.contact_form2{width:50%; position:absolute; top:0; right:0;}
+.contact_form2 input, .contact_form2 textarea{background:none; border:1px solid #e6e6e6; color:#acacac;  padding-left:3%; font-size:13px; font-family:'NanumSquare', sans-serif;}
+.sub_form_name{width:49%; height:35px;}
+.sub_form_tel{width:49%; height:35px;}
+.sub_form_message{width:100%; height:85px; resize:none; margin-top:5px; overflow:hidden; padding:3%;}
+.sub_form_submit{width:100%; background:none !important; border:none !important; padding:0 !important; margin-top:3px;}
+.contact_form2 ::-webkit-input-placeholder{ /* WebKit browsers */
+    color:#acacac; font-size:13px;}
+.contact_form2 :-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+    color:#acacac; font-size:13px;}
+.contact_form2 ::-moz-placeholder{ /* Mozilla Firefox 19+ */
+    color:#acacac; font-size:13px;}
+.contact_form2 :-ms-input-placeholder{ /* Internet Explorer 10+ */
+    color:#acacac; font-size:13px;}
+#map{width:100%; height:558px; position:relative;}
+.gmnoprint{display:none;}
+.map_bg{width:100%; height:166px; background:url(../img/sub_map_bg.png) no-repeat; background-size:cover; position:absolute; bottom:1123px; z-index:3333;}
+
+/* 반응형 */
+
+@media screen and (max-width :1200px){
+	#sub_header{height:500px;}
+	#sub_header_inner{top:35%;}
+	#sub_header_inner h2{font-size:50px; }
+	#sub_header_inner p{font-size:15px;  margin-top:30px;}
+	/* ------------------------------------------- about ------------------------------------------- */
+	#aboutme .pagedown{top:403px;}
+	#skillchart{height:647px;}
+	#skillchart .color{margin-left:0;}
+	.chart_txt_left h2{font-size:35px; margin-top:20px;}
+	.chart_txt_left{width:43%;}
+	.chart_txt_right{width:57%; font-size:14px; margin-top:47px;}
+	.chart_txt_right br{display:none;}
+	/* ------------------------------------------- work ------------------------------------------- */
+	/* #sub_work_txt{height:100%;} */
+	#sub_work_txt .color{margin-left:0;}
+	#sub_work_txt br{display:none;} 
+	.sub_work_txt_left{width:100%; margin-top:-40px;}
+	.sub_work_txt_left h2{font-size:35px; margin-top:20px; }
+	.sub_work_txt_right{ float:left; width:95%; font-size:14px; margin-top:20px;}
+	#sub_work_txt .pagedown{line-height:172px;}
+	#portfolio_txt{ height:251px; }
+	/* ------------------------------------------- contact us ------------------------------------------- */
+	#contact{height:550px;} 
+	.contact_inner_1{height:100%; overflow:hidden;}
+	.contact_inner_1 h2{font-size:35px; margin-top:20px;}
+	.contact_inner_1 br{display:none;}
+	.contact_us_img{display:none;}
+	.contact_inner_1 .contact_left{width:100%; }
+	.contact_us p{font-size:14px; width:95%; margin-top:20px;}
+	.contact_inner_2{margin-top:70px;}
+	.contact_inner_2 h3{font-size:25px;margin-bottom:20px;}
+	.contact_inner_2 p{font-size:13px;}
+	.contact_form2{width:80%; position:relative; }
+	.sub_form_name{width:49%; height:30px;}
+	.sub_form_tel{ width:49%; height:30px;}
+	.sub_form_message{height:70px; }
+	#map{ height:349px; }
+	.map_bg{height:104px;bottom:721px;}
+	}
+@media screen and (max-width :768px){
+	#sub_header_inner{top:30%;}
+	#sub_header_inner h2{font-size:40px; }
+	#sub_header_inner p{font-size:14px;  margin-top:20px;}
+	/* ------------------------------------------- about ------------------------------------------- */
+	#aboutme{height:403px;}
+	#skillchart{margin-top:-100px; }
+	#skillchart .color{margin-left:0;}
+	.chart_txt_left h2{font-size:25px; margin-top:10px;}
+	.chart_txt_left{width:100%;}
+	.chart_txt_right{width:100%; font-size:12px; margin-top:10px;}
+	.chart_txt_right br{display:none;}	
+	/* ------------------------------------------- work ------------------------------------------- */
+	.sub_work_txt_left h2{font-size:25px; margin-top:10px; }
+	.sub_work_txt_right{font-size:12px; }
+	#portfolio_txt{ height:224px; }
+	/* ------------------------------------------- contact us ------------------------------------------- */
+	.contact_inner_1 h2{font-size:25px; margin-top:10px;}
+	.contact_us p{font-size:12px; margin-top:10px;}
+	.contact_inner_2{margin-top:70px;}
+	.contact_inner_2 .contact_left{width:45%; }
+	.contact_inner_2 h3{font-size:20px;margin-bottom:10px;}
+	.contact_inner_2 p{font-size:11px;}
+	.sub_form_name{width:100%; height:20px;}
+	.sub_form_tel{ width:100%; height:20px; margin-top:5px;}
+	.sub_form_message{height:50px; }
+	#map{ height:223px; margin-top:-50px;}
+	.map_bg{height:94px;bottom:670px;}
+}
+@media screen and (max-width :480px){
+	#sub_header_inner{top:28%;}
+	#sub_header_inner h2{font-size:30px; }
+	#sub_header_inner p{font-size:12px;  margin-top:15px;}
+	/* ------------------------------------------- about ------------------------------------------- */
+	.chart_txt_left h2{font-size:20px; }
+	.chart_txt_right{font-size:11px; }
+	/* ------------------------------------------- work ------------------------------------------- */
+	.sub_work_txt_left h2{font-size:20px;  }
+	.sub_work_txt_right{ font-size:11px;}
+	/* ------------------------------------------- contact us ------------------------------------------- */
+	.contact_inner_1 h2{font-size:20px;;}
+	.contact_us p{font-size:11px;}
+	.contact_inner_2{margin-top:70px;}
+	.contact_inner_2 h3{font-size:16px;}
+	.contact_inner_2 p{font-size:8px;}
+	#map{ height:223px; margin-top:-50px;}
+	.map_bg{height:94px;bottom:670px;}
+	.view_expertise img, #sub_work_txt .pagedown img, .view_contact img, #aboutme .pagedown img{width:50%;}
+	#aboutme{height:310px;}
+	#sub_work_txt{height:300px;}
+	}
+
+
+

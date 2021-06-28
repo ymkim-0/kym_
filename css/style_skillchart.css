@@ -1,0 +1,28 @@
+.chart {width:1000px; position:relative; margin:116px auto 0; min-height:670px; display:block;}
+.chart .skills {position:absolute; display:flex; flex-direction:column; height:100%; padding:0; margin:0; width:15%;}
+.chart .skills li{text-align:left; font-size:15px;  margin:5px 0px; color:#252525;}
+.chart li{flex:1; position:relative;}
+.chart .bars {display:flex; flex-direction:column; position:absolute; padding:0; margin:0; height:100%; width:85%; left:15%;}
+.chart .bars .bar{width:0px; background:#e74c3c; padding:12px 0px;  float:left;  color:#fff; font-size:15px;  text-align:center;}
+.chart .bars .bar:nth-child(even),#personal {background:#212121; color:#e1e1e1;}
+.chart .bars .bar:nth-child(even):hover{background:#292929;}
+.chart .bars .bar:nth-child(odd):hover{background:#eb4534;}
+#profession{background:#47EAD4; color:#333;}
+#profession,#personal{padding:10px; display:inline-block; text-align:center;}
+.chart p{width:90%; margin:0px auto; text-align:center;}
+
+@media screen and (max-width:1200px) {
+  .chart {width:100%; margin:30px auto 0; min-height:480px;}
+  .chart .skills li{font-size:14px; margin:0px;}
+  .chart .bars .bar{padding:5px 0px; font-size:14px;}
+ }
+@media screen and (max-width:768px) {
+  .chart {margin:40px auto 0;}
+  .chart .skills li{font-size:12px;}
+  .chart .bars .bar{padding:4px 0px; font-size:12px;}
+}
+@media screen and (max-width:480px) {
+  .chart {margin:30px auto 0;}
+  .chart .skills li{font-size:9px;}
+  .chart .bars .bar{font-size:11px;}
+}
